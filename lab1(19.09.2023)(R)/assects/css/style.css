@@ -1,0 +1,380 @@
+body{
+    font-family: 'Inter', sans-serif;
+
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Container*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Intro */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 120vh;
+    margin-top: -150px;
+
+}
+
+/*контрить intro inner*/
+.intro_inner{
+    width: 100%;
+    max-width: 356px;
+    margin: unset;
+}
+
+
+.intro_title{
+    font-family:'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: unset;
+    text-align: left;
+    line-height:60px;
+    
+}
+
+.intro_photo {
+    position: absolute;
+    top: -31%;
+    right: 0;
+    width: 800px;
+    height: auto; 
+    transform: translateY(50%); 
+    background: url("assects/image/Thousand-02 1.png") no-repeat center center;
+    background-size: cover;
+}
+
+
+
+.intro_suptitle{
+    font-size: 22px;
+    text-align: left;
+}
+
+.intro_suptitle::after{
+    content:  "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    margin: 60px 20px auto 0;
+
+    background-color: black;
+}
+
+.intro_choise{
+    display: inline-block;
+   vertical-align: top;
+   margin: 0 10px;
+
+    color: black;
+
+}
+
+.intro_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Відстань між рядами */
+}
+
+.intro_item {
+    border: 2px solid #4A4C53;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 130px; /* Ширина текстового блоку */
+    font-size: 14px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left;
+    margin-right: 21px;
+}
+
+.intro_btn {
+    border: 4px solid orange;
+    background: orange;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 130px; 
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    display: inline-block; /* Зробить кнопку блочним елементом */
+}
+
+
+/*header */
+.header{
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+   font_size: 30px;
+   font-weight: 700;
+   color: #fff;
+}
+
+/*nav*/
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+   display: inline-block;
+   vertical-align: top;
+   margin: 0 10px;
+
+    color: grey;
+    text-decoration:none ;
+    text-transform: capitalize;
+    transition: color .2s linear;
+}
+
+.nav__link:hover {
+    color: black;
+}
+
+.nav__btn1{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    margin: 0 10px;
+    
+    border: 4px solid orange;
+    border-radius: 15px;
+
+    width: 95px;
+    height: 25px;
+    font-size: 14px;
+    color: orange;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center; 
+    line-height: 25px;
+    
+}
+
+.nav__btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    margin: 0 10px;
+    
+    border: 4px solid orange;
+    border-radius: 15px;
+
+    width: 95px;
+    height: 25px;
+    font-size: 14px;
+    color: #fff;
+    background-color: orange;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    text-align: center; /* Горизонтальне вирівнювання тексту по центру */
+    line-height: 25px;
+}
+
+
+/*section*/
+.section{
+   background: #F8F8F8;
+   width: 100%;
+   height: 770px;
+   padding-top: 120px;
+}
+
+.section_photo {
+    float: left; /* Зміщуємо фотографію вліво */
+    margin-right: 20px; /* Додаємо правий відступ між фото та текстом */
+}
+
+.section_into{
+    font-family:'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: unset;
+    text-align: left;
+    line-height:40px;
+    top: 125%; 
+    right: 110px; 
+}
+
+.section_text{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: unset;
+    margin-top: 20px;
+    text-align: left;
+    margin-top: 20px;
+    right: 0;
+}
+
+
+.section_btn {
+    border: 4px solid orange;
+    background: orange;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 130px;
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: 10px; 
+}
+
+
+.section2_into{
+    font-family:'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: unset;
+    text-align: left;
+    line-height:40px;
+    top: 120%; 
+    right: 110px; 
+    margin-top: 190px;
+}
+
+.section2_link{
+    float: right; 
+    margin-left: 10px;
+    margin-top: -40px;
+    text-decoration: none;
+    color: orange;
+}
+
+.photo-row {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.photo {
+    flex: 1;
+    margin-right: 10px; 
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-caption {
+    position: absolute; 
+    bottom: 4px; 
+    left: -2px; 
+    font-size: 16px;
+    background-color: white;  
+    color: black; 
+    padding: 15px 20px; 
+    border-radius: 5px; 
+}
+
+.footer {
+    background: F8;
+    padding: 60px 0 32px;
+  }
+  
+  .footer__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__branding__date {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .footer__branding__logo {
+    font-weight: 900;
+    font-size: 26px;
+    color: #37447e;
+  }
+  
+  .footer__branding__label {
+    width: 400px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .footer__hr {
+    background: #cdd1d4;
+    margin: 40px 0 20px;
+    height: 1px;
+    border: 0;
+  }
+  
+  .footer__links {
+    font-size: 14px;
+    color: #929ecc;
+  }
+  
+  .footer__links ul {
+    display: flex;
+  }
+  
+  .footer__links li {
+    margin-right: 100px;
+  }
+  
+  .footer__links a {
+    color: #929ECC;
+  }
+  
+  .footer__social {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer__social__link {
+    width: 16px;
+    height: 16px;
+    margin-left: 40px;
+  }
