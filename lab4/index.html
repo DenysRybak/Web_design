@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Метатеги і посилання на стилі -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+      <div class="header_inner">
+         <h1 class="Text_header">Animal Calculator</h1>
+      </div>
+   </header>
+
+   <div class="intro">
+      <div class="container">
+         <div class="intro_inner">
+            <!-- Поле вводу та кнопка для створення та редагування табличок -->
+            <div class="page-navigation">
+              <button id="createTablePageButton">Створити Табличку</button>
+              <button id="editTablePageButton">Редагувати Табличку</button>
+            </div>
+            <!-- Сторінка створення табличок -->
+            <div class="create-table">
+              <h2>Створення Таблички</h2>
+              <form id="createTableForm">
+                <label for="tableName">Назва Таблички:</label>
+                <input type="text" id="tableName" placeholder="Назва">
+                <label for="tableDescription">Опис Таблички:</label>
+                <input type="text" id="tableDescription" placeholder="Опис">
+                <label for="tablePrice">Ціна Таблички:</label>
+                <input type="text" id="tablePrice" placeholder="Ціна">
+              </form>
+            </div>
+            <!-- Сторінка редагування табличок -->
+            <div class="edit-table">
+              <h2>Редагування Таблички</h2>
+              <form id="editTableForm">
+                <label for="editTableName">Назва Таблички:</label>
+                <input type="text" id="editTableName" placeholder="Назва">
+                <label for="editTableDescription">Опис Таблички:</label>
+                <input type="text" id="editTableDescription" placeholder="Опис">
+                <label for="editTablePrice">Ціна Таблички:</label>
+                <input type="text" id="editTablePrice" placeholder="Ціна">
+              </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="results">
+      <div class="container">
+         <div class="results_inner">
+            <h1 class="Result_text">Таблиці</h1>
+         </div>
+      </div>
+   </div>
+   
+    
+<script src="index.js"></script>
+</body>
+</html>
